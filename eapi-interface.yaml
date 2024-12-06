@@ -1,0 +1,15 @@
+
+
+switch:
+  leaf1-dc1:
+    interfaces:
+      Ethernet1: "1.1.1.1/24"
+      Ethernet2: "2.2.2.2/24"
+      Ethernet3: "3.3.3.3/24"
+      Ethernet4: "4.4.4.4/24"
+  leaf2-dc1:
+    interfaces:
+      Ethernet1: "1.1.1.2/24"
+      Ethernet2: "2.2.2.3/24"
+      Ethernet3: "3.3.3.4/24"
+      Ethernet4: "4.4.4.5/24"
