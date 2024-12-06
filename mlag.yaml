@@ -1,0 +1,41 @@
+---
+odd:
+  vlan: 4094
+  svi: 172.16.255.1/30
+  domain: MLAGDomain
+  priority: 10
+  peer: 172.16.255.2
+  bgpsvi: 172.16.253.1/30
+
+even:
+  vlan: 4094
+  svi: 172.16.255.2/30
+  domain: MLAGDomain
+  priority: 20
+  peer: 172.16.255.1
+  bgpsvi: 172.16.253.2/30
+  
+leaf1-DC1:
+  mlagtype: odd
+leaf3-DC1:
+  mlagtype: odd
+leaf1-DC2:
+  mlagtype: odd
+leaf3-DC2:
+  mlagtype: odd
+borderleaf1-DC1:
+  mlagtype: odd
+borderleaf1-DC2:
+  mlagtype: odd
+leaf2-DC1:
+  mlagtype: even
+leaf4-DC1:
+  mlagtype: even
+leaf2-DC2:
+  mlagtype: even
+leaf4-DC2:
+  mlagtype: even
+borderleaf2-DC1:
+  mlagtype: even
+borderleaf2-DC2:
+  mlagtype: even
