@@ -1,7 +1,7 @@
 
 #! /usr/bin/python3
 import yaml
-file = open('/home/coder/project/persist/YAML/example.yaml', 'r' )
+file = open('/home/coder/project/labfiles/EVPN Underlay/eapi-interface.yaml', 'r' )
 example_raw =  file.read()
 example_yaml = yaml.safe_load(example_raw)
 #print(example_yaml)
